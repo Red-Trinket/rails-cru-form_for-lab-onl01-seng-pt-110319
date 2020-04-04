@@ -26,6 +26,7 @@ RSpec.describe "Artists", type: :request do
 
   describe "GET /create" do
     it "returns http success" do
+      @show_artist = Artist.create()
       get "/artist/create"
       expect(response).to have_http_status(:success)
     end
