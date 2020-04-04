@@ -40,7 +40,7 @@ Rails.application.routes.draw do
 
   get 'artist/index'
 
-  get 'artist/show' => 'artists#show'
+  get 'artist/show/:id' => 'artists#show'
 
   get 'artist/new'
 
