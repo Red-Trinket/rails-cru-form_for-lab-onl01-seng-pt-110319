@@ -42,13 +42,13 @@ Rails.application.routes.draw do
 
   get 'artist/show/:id' => 'artists#show'
 
-  get 'artist/new'
+  get 'artist/new' => 'artists#new'
 
-  get 'artist/create'
+  get 'artist/create' => 'artists#create'
 
-  get 'artist/edit'
+  get 'artist/edit' => 'artists#edit'
 
-  get 'artist/update' 
+  get 'artist/update' => 'artists#update'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :songs, only: [:index, :show, :new, :edit, :update, :create]
