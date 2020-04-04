@@ -10,7 +10,7 @@ RSpec.describe "Artists", type: :request do
   end
 
   describe "GET /show" do
-    ;et(:artist)
+    let(:artist)
     it "returns http success" do
       get "/artist/show"
       expect(response).to have_http_status(:success)
