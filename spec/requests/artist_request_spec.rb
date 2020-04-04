@@ -12,7 +12,7 @@ RSpec.describe "Artists", type: :request do
   describe "GET /show" do
     let(:artist) {Artist.new(name:"Da Vince",bio:"neat bio")}
     it "returns http success" do
-      get "/artist/show/1"
+      get "/artist/show/"
       expect(response).to have_http_status(:success)
     end
   end
